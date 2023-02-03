@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>doctor love</title>
+
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="text">
+        <h1>Calculadora do Amor</h1>
+        <p>
+            Bem-vindo a esta grande invenção do Doutor Love.
+        </p>
+        <p>
+            Todos nós sabemos que um nome pode dizer muito sobre uma pessoa. Os nomes não são escolhidos aleatoriamente:
+            todos eles têm um significado. O Doutor Love sabia disso, então ele fez grande invenção para você que é
+            solitário.
+            Às vezes você gostaria de saber se um relacionamento com alguém poderia dar certo. Portanto, o próprio
+            Doutor Love projetou esta grande máquina para você. Com a Calculadora do Amor, você pode calcular a
+            probabilidade de um relacionamento bem-sucedido entre duas pessoas. A Calculadora do Amor é uma forma
+            efetiva de ter uma ideia de quais são as chances de um relacionamento entre duas pessoas.
+        </p>
+
+        <p>
+            Para descobrir as chances de você e o parceiro de seus sonhos, basta preencher os dois nomes completos (nome
+            e sobrenome) nas duas caixas de texto abaixo e pressionar calcular.
+        </p>
+
+        <p>
+            Informe os dois nomes a serem analisados:
+        </p>
+    </div>
+    <div class="calculadora">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"> Seu nome</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Nome da pessoa</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+
+                <button onclick="myFunction()">calcular</button>
+                <audio src="/magico_efeito_sonoro_toquesengracadosmp3.com.mp3" autoplay></audio>
+
+
+                <p id="demo"></p>
+
+                <script>
+                    function myFunction() {
+                        var x;
+
+                        prompt("Qual o seu nome?")
+                        prompt("Qual o nome da pessoa?")
+                        var CalculadoraDoAmor = Math.random() * 100;
+                        CalculadoraDoAmor = Math.floor(CalculadoraDoAmor) + 1;
+
+                        if (CalculadoraDoAmor > 70) {
+                            alert("A probabilidade de amor é " + CalculadoraDoAmor + "%" + " Esse vc consegue namorar!");
+                        }
+
+                        if (CalculadoraDoAmor > 30 && CalculadoraDoAmor <= 70) {
+                            alert("Seu nivel de amor é " + CalculadoraDoAmor + "%");
+                        }
+
+                        if (CalculadoraDoAmor <= 30) {
+                            alert("Seu nível de amor é " + CalculadoraDoAmor + " % " + "vocês dois se dão bem como água e óleo!");
+                        }
+
+                    }
+                </script>
+
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

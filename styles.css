@@ -1,0 +1,36 @@
+body {
+    color: #fff;
+    background-size: cover;
+    background: url("/hero-bg.jpg");
+    background-position-x: left;
+    backface-visibility: visible;
+    background-size: 80%;
+
+
+}
+
+@media all and (orientation: landscape) {
+
+
+    .text {
+        text-align: left;
+        font-family: 'Love Ya Like A Sister', cursive;
+        font-size: 2rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        color: #fff;
+    }
+
+    .calculadora {
+        text-align: left;
+        font-family: 'Love Ya Like A Sister', cursive;
+        font-size: 2rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        color: #fff;
+    }
+}
